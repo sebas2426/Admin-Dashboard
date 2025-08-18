@@ -55,9 +55,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a{
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.4rem 1rem;
     background-color: rgb(228, 143, 143);
     border-radius: 1.5rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 255);
 }
 
 
@@ -70,20 +72,18 @@ a{
 }
 
 .header{
-    background-color: rgb(226, 226, 38);
+    background-color: rgb(243, 243, 243);
     grid-row: 1/2;
     grid-column: 2/5;
     display: grid;
     grid-template-rows: repeat(2,1fr);
-    
+    padding: 0 1rem;
 }
 
 .search-section{
     display: grid;
     grid-template: 1fr/2fr 1fr;
     align-items: center;
-    background-color: red;
-    padding: 0rem;
 }
 
 .search-section input{
@@ -161,11 +161,17 @@ a{
     align-items: center;
 }
 
+.sidebar-element.one h3,
+.sidebar-element h3{
+  cursor: pointer;
+
+}
+
 .main-content{
     display: grid;
     grid-template: repeat(6,1fr)/ 2fr 1fr;
     gap: 1rem 0;
-background-color: burlywood;
+background-color: rgb(214, 214, 214);
 grid-row: 2/5;
 grid-column: 2/5;
 padding: 1rem;
@@ -184,17 +190,16 @@ padding: 1rem;
     display: grid;
     grid-template: repeat(3,1fr)/repeat(2,325px);
     gap: 1rem;
-    background-color: lightblue;
     margin-top: 2rem;
 }
 
 .main-left-content{
     display: grid;
     grid-template: 100px 80px/ repeat(4,90px);
-    border-left: 10px solid black;
+    border-left: 10px solid rgb(234, 255, 43);
     border-radius: 1rem;
     padding: 1rem;
-    background-color: rgb(197, 157, 157);
+    background-color: rgb(255, 255, 255);
 }
 
 .main-left-one{
@@ -210,6 +215,7 @@ padding: 1rem;
     align-self: center;
     grid-row: 2;
     grid-column: 3;
+    cursor: pointer;
 }
 
 .main-right-one{
@@ -222,10 +228,9 @@ padding: 1rem;
 .main-right-two{
   width: 80%;
   justify-self: center;
-  border-radius: 0.5rem;
     grid-row: 4/7;
     grid-column: 2;
-    background-color: lightgreen;
+    padding:  0;
 }
 
 
@@ -238,6 +243,12 @@ padding: 1rem;
   margin: 0.2rem 0;
 }
 
+.main-right-Trend{
+  padding: 0 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+}
+
 .main-right-Ann span{
   margin: 0.5rem 0;
   border-bottom: 1px solid gray;
@@ -246,7 +257,7 @@ padding: 1rem;
 .main-right-Trend span{
     display: grid;
     grid-template-columns: 70px 1fr;
-    grid-template-rows: 70px;
+    grid-template-rows: 80px;
     align-items: center;
     gap: 0.5rem;
 }
